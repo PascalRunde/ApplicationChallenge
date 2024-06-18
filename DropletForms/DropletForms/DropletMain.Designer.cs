@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DropletMain));
             SuspendLayout();
             // 
             // DropletMain
@@ -37,6 +38,7 @@
             BackColor = Color.White;
             ClientSize = new Size(1234, 736);
             Font = new Font("Verdana", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(6, 5, 6, 5);
             Name = "DropletMain";
             Text = "Droplet";
