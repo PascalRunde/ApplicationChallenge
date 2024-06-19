@@ -1,35 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.SQLite;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Dapper;
 using DropletLib;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace DropletForms.DBCommunication
 {
-    public class DatabaseCommunicationService : IDatabaseCommunicationService, IDisposable
+    /// <summary>
+    /// The purpose of this class is:
+    /// 1. Communication with the database
+    /// This is the only place where ImageModels are created - so there is no discrepancy between runtime data and database
+    /// </summary>
+    public class DatabaseCommunicationService : IDatabaseCommunicationService
     {
         IDbConnection connection;
 
         private List<ImageModel> currentlyDisplayedImages;
-        public DatabaseCommunicationService()
+        public DatabaseCommunicationService(string connectionString)
         {
-            connection = new SQLiteConnection(LoadConnectionString());
-        }
-
-        /// <summary>
-        /// Get the configuration string which is defined in DropletForms/App.config
-        /// </summary>
-        /// <param name="id"> This parameter is optional. If there should be additional databases in the future it would be possible to choose which to load.</param>
-        /// <returns></returns>
-        private static string LoadConnectionString(string id = "DBconnection")
-        {
-            return ConfigurationManager.ConnectionStrings[id].ConnectionString;
+            this.connection = new SQLiteConnection(connectionString);
         }
 
         public void AddImage(string filepath)

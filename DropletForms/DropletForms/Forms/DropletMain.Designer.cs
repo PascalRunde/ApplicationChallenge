@@ -36,6 +36,7 @@
             pictureBox4 = new PictureBox();
             StartRatingButton = new Button();
             ShowWinnerButton = new Button();
+            ClickMostBeautifulLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -63,7 +64,7 @@
             pictureBox1.Size = new Size(696, 464);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += this.pictureBox1_Click;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -120,12 +121,23 @@
             ShowWinnerButton.UseVisualStyleBackColor = false;
             ShowWinnerButton.Click += ShowWinnerButton_Click;
             // 
+            // ClickMostBeautifulLabel
+            // 
+            ClickMostBeautifulLabel.AutoSize = true;
+            ClickMostBeautifulLabel.Location = new Point(771, 34);
+            ClickMostBeautifulLabel.Name = "ClickMostBeautifulLabel";
+            ClickMostBeautifulLabel.Size = new Size(465, 34);
+            ClickMostBeautifulLabel.TabIndex = 7;
+            ClickMostBeautifulLabel.Text = "Click the most beautiful image!";
+            ClickMostBeautifulLabel.Visible = false;
+            // 
             // DropletMain
             // 
             AutoScaleDimensions = new SizeF(17F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1748, 1101);
+            Controls.Add(ClickMostBeautifulLabel);
             Controls.Add(ShowWinnerButton);
             Controls.Add(StartRatingButton);
             Controls.Add(pictureBox3);
@@ -143,6 +155,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -154,5 +167,6 @@
         private PictureBox pictureBox4;
         private Button StartRatingButton;
         private Button ShowWinnerButton;
+        private Label ClickMostBeautifulLabel;
     }
 }

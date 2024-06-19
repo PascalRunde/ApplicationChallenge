@@ -43,6 +43,7 @@ namespace DropletForms
             try
             {
                 SetupNewRatingView();
+                ClickMostBeautifulLabel.Visible = true;
             }
             catch (Exception exception)
             {
