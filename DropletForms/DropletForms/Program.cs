@@ -4,6 +4,7 @@ using System;
 using System.Data.SQLite;
 using DropletForms.DBCommunication;
 using DropletForms.Forms;
+using DropletForms.RatingCalculation;
 
 namespace DropletForms
 {
@@ -35,6 +36,7 @@ namespace DropletForms
                     services.AddSingleton<AddImageFormFactory>(() => ServiceProvider.GetRequiredService<AddImageForm>());
                     services.AddSingleton<WinnerFormFactory>(() => ServiceProvider.GetRequiredService<WinnerForm>());
                     services.AddTransient<IDatabaseCommunicationService, DatabaseCommunicationService>();
+                    services.AddSingleton<IRatingCalculator, RatingCalculator>();
                 });
         }
 

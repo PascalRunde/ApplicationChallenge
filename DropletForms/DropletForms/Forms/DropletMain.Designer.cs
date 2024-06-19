@@ -63,6 +63,7 @@
             pictureBox1.Size = new Size(696, 464);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += this.pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -80,6 +81,7 @@
             pictureBox3.Size = new Size(696, 464);
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 
@@ -88,6 +90,7 @@
             pictureBox4.Size = new Size(696, 464);
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // StartRatingButton
             // 
@@ -101,7 +104,7 @@
             StartRatingButton.TabIndex = 5;
             StartRatingButton.Text = "Start Rating";
             StartRatingButton.UseVisualStyleBackColor = false;
-            StartRatingButton.Click += this.StartRatingButton_Click;
+            StartRatingButton.Click += StartRatingButton_Click;
             // 
             // ShowWinnerButton
             // 
@@ -115,7 +118,7 @@
             ShowWinnerButton.TabIndex = 6;
             ShowWinnerButton.Text = "Show Winner";
             ShowWinnerButton.UseVisualStyleBackColor = false;
-            ShowWinnerButton.Click += this.ShowWinnerButton_Click;
+            ShowWinnerButton.Click += ShowWinnerButton_Click;
             // 
             // DropletMain
             // 
