@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DropletForms.DBCommunication;
 using DropletLib;
 
 namespace DropletForms
 {
+    //Add a delegate factory, so the main form can invoke the AddImageForm with dependency injection
+    public delegate AddImageForm AddImageFormFactory();
     public partial class AddImageForm : Form
     {
-        public AddImageForm()
+        private readonly IDatabaseCommunicationService databaseCommunicationService;
+        public AddImageForm(IDatabaseCommunicationService databaseCommunicationService)
         {
             InitializeComponent();
+            this.databaseCommunicationService = databaseCommunicationService;
         }
 
         private void AddImageButton_Click(object sender, EventArgs e)
@@ -26,11 +31,11 @@ namespace DropletForms
             }
             if (IsFilledCompletely())
             {
-                SqliteDataAccess.AddImage(NameTextBox.Text, LocationTextBox.Text, FilepathTextBox.Text);
+                databaseCommunicationService.AddImage(NameTextBox.Text, LocationTextBox.Text, FilepathTextBox.Text);
             }
             else
             {
-                SqliteDataAccess.AddImage(FilepathTextBox.Text);
+                databaseCommunicationService.AddImage(FilepathTextBox.Text);
             }
         }
 

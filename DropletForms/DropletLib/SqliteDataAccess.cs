@@ -10,32 +10,26 @@ using System.Threading.Tasks;
 
 namespace DropletLib
 {
-    public class SqliteDataAccess
+    public class SqliteDataAccess : ISqliteDataAccess, IDisposable
     {
+        IDbConnection connection;
+        public SqliteDataAccess() 
+        {
+            connection = new SQLiteConnection(LoadConnectionString());
+        }
 
-        public static List<ImageModel> LoadImage()
+
+        public List<ImageModel> LoadImages()
         {
             //Dont leave connections open
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                var output = connection.Query<ImageModel>("SELECT * FROM Images", new DynamicParameters());
+                var output = connection.Query<ImageModel>("SELECT * FROM Images ORDER BY random() LIMIT 4", new DynamicParameters());
                 return output.ToList();
             }
         }
 
-        public static void AddImage(string filepath)
-        {
-            ImageModel model = new ImageModel(filepath);
-            AddImageToDatabase(model);
-        }
-
-        public static void AddImage(string name, string location, string filepath)
-        {
-            ImageModel model = new ImageModel(name, location, filepath);
-            AddImageToDatabase(model);
-        }
-
-        private static void AddImageToDatabase(ImageModel image)
+        public void AddImageToDatabase(ImageModel image)
         {
             string connectionString = LoadConnectionString();
             //Dont leave connections open
@@ -52,13 +46,10 @@ namespace DropletLib
             }
         }
 
-        public static void UpdateImage(ImageModel image)
+        public void SetImageRating(ImageModel image, int newRating)
         {
-            //Dont leave connections open
-            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
-            {
-                connection.Query<ImageModel>("SELECT * FROM Images", new DynamicParameters());
-            }
+            connection.Execute("UPDATE Images SET Rating = @newRating WHERE Id = @Id", new { newRating, image.Id });
+
         }
 
         /// <summary>
@@ -69,6 +60,11 @@ namespace DropletLib
         private static string LoadConnectionString(string id = "DBconnection")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;
+        }
+
+        public void Dispose()
+        {
+            connection.Dispose();
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DropletMain));
-            button1 = new Button();
+            AddImageButton = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -40,19 +40,19 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // AddImageButton
             // 
-            button1.BackColor = Color.White;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button1.FlatAppearance.MouseOverBackColor = Color.Silver;
-            button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(43, 92);
-            button1.Name = "button1";
-            button1.Size = new Size(161, 80);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            AddImageButton.BackColor = Color.White;
+            AddImageButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            AddImageButton.FlatAppearance.MouseOverBackColor = Color.Silver;
+            AddImageButton.ForeColor = SystemColors.ControlText;
+            AddImageButton.Location = new Point(43, 92);
+            AddImageButton.Name = "AddImageButton";
+            AddImageButton.Size = new Size(161, 80);
+            AddImageButton.TabIndex = 0;
+            AddImageButton.Text = "Add Image";
+            AddImageButton.UseVisualStyleBackColor = false;
+            AddImageButton.Click += AddImageButton_Click;
             // 
             // pictureBox1
             // 
@@ -97,7 +97,7 @@
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
+            Controls.Add(AddImageButton);
             Font = new Font("Verdana", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(6, 5, 6, 5);
@@ -112,7 +112,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button AddImageButton;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
