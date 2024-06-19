@@ -57,7 +57,11 @@ namespace DropletForms
 
         private void SelectPathButton_Click(object sender, EventArgs e)
         {
-
+            var FD = new OpenFileDialog();
+            if (FD.ShowDialog() == DialogResult.OK)
+            {
+                FilepathTextBox.Text = FD.FileName;
+            }
         }
     }
 }

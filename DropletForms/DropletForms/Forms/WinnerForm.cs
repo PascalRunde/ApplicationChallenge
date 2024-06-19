@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DropletForms.RatingCalculation;
+using DropletLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +16,20 @@ namespace DropletForms.Forms
     public delegate WinnerForm WinnerFormFactory();
     public partial class WinnerForm : Form
     {
-        public WinnerForm()
+        IRatingCalculator ratingCalculator;
+        public WinnerForm(IRatingCalculator ratingCalculator)
         {
+            this.ratingCalculator = ratingCalculator;
             InitializeComponent();
-
+            ImageModel image = ratingCalculator.GetWinner();
+            DisplayWinner(image);
         }
+
+        private void DisplayWinner(ImageModel image)
+        {
+            WinnerLabel.Text = image.Location;
+            pictureBox1.Image = Image.FromFile(image.Filepath);
+        }
+
     }
 }

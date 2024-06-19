@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{AD108DB7-C8CC-4C56-9D31-3BD55F4ED31C}|DropletLib\\DropletLib.csproj|solutionrelative:dropletlib\\dbcommunication\\databasecommunicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|f:\\programmieren\\saaldigital\\applicationchallenge\\dropletforms\\dropletforms\\forms\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|solutionrelative:dropletforms\\forms\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|f:\\programmieren\\saaldigital\\applicationchallenge\\dropletforms\\dropletforms\\forms\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|solutionrelative:dropletforms\\forms\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AD108DB7-C8CC-4C56-9D31-3BD55F4ED31C}|DropletLib\\DropletLib.csproj|f:\\programmieren\\saaldigital\\applicationchallenge\\dropletforms\\dropletlib\\dbcommunication\\idatabasecommunicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD108DB7-C8CC-4C56-9D31-3BD55F4ED31C}|DropletLib\\DropletLib.csproj|solutionrelative:dropletlib\\dbcommunication\\idatabasecommunicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|solutionrelative:dropletforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|f:\\programmieren\\saaldigital\\applicationchallenge\\dropletforms\\dropletforms\\forms\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|solutionrelative:dropletforms\\forms\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|f:\\programmieren\\saaldigital\\applicationchallenge\\dropletforms\\dropletforms\\forms\\winnerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|solutionrelative:dropletforms\\forms\\winnerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|solutionrelative:dropletforms\\forms\\addimageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|f:\\programmieren\\saaldigital\\applicationchallenge\\dropletforms\\dropletforms\\forms\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|solutionrelative:dropletforms\\forms\\winnerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|f:\\programmieren\\saaldigital\\applicationchallenge\\dropletforms\\dropletforms\\dropletforms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{2095FCF3-0FF5-4B60-812C-788CBD6F9ABA}|DropletForms\\DropletForms.csproj|solutionrelative:dropletforms\\dropletforms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -78,34 +78,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IRatingCalculator.cs",
-              "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\RatingCalculation\\IRatingCalculator.cs",
-              "RelativeDocumentMoniker": "DropletLib\\RatingCalculation\\IRatingCalculator.cs",
-              "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\RatingCalculation\\IRatingCalculator.cs",
-              "RelativeToolTip": "DropletLib\\RatingCalculation\\IRatingCalculator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAwAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T16:38:59.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RatingCalculator.cs",
-              "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\RatingCalculation\\RatingCalculator.cs",
-              "RelativeDocumentMoniker": "DropletLib\\RatingCalculation\\RatingCalculator.cs",
-              "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\RatingCalculation\\RatingCalculator.cs",
-              "RelativeToolTip": "DropletLib\\RatingCalculation\\RatingCalculator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T16:38:13.246Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -114,14 +88,14 @@
               "RelativeDocumentMoniker": "DropletLib\\DBCommunication\\DatabaseCommunicationService.cs",
               "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\DBCommunication\\DatabaseCommunicationService.cs",
               "RelativeToolTip": "DropletLib\\DBCommunication\\DatabaseCommunicationService.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAIA7wDUAAAANAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAawFEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T16:34:30.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IDatabaseCommunicationService.cs",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\DBCommunication\\IDatabaseCommunicationService.cs",
               "RelativeDocumentMoniker": "DropletLib\\DBCommunication\\IDatabaseCommunicationService.cs",
@@ -134,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ImageModel.cs",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\Models\\ImageModel.cs",
               "RelativeDocumentMoniker": "DropletLib\\Models\\ImageModel.cs",
@@ -147,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AddImageForm.Designer.cs",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\AddImageForm.Designer.cs",
               "RelativeDocumentMoniker": "DropletForms\\Forms\\AddImageForm.Designer.cs",
@@ -160,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DropletMain.Designer.cs",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\DropletMain.Designer.cs",
               "RelativeDocumentMoniker": "DropletForms\\Forms\\DropletMain.Designer.cs",
@@ -173,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DropletMain.cs",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\DropletMain.cs",
               "RelativeDocumentMoniker": "DropletForms\\Forms\\DropletMain.cs",
@@ -186,7 +160,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WinnerForm.cs",
+              "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.cs",
+              "RelativeDocumentMoniker": "DropletForms\\Forms\\WinnerForm.cs",
+              "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.cs",
+              "RelativeToolTip": "DropletForms\\Forms\\WinnerForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:27:37.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WinnerForm.cs [Entwurf]",
+              "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.cs",
+              "RelativeDocumentMoniker": "DropletForms\\Forms\\WinnerForm.cs",
+              "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.cs [Entwurf]",
+              "RelativeToolTip": "DropletForms\\Forms\\WinnerForm.cs [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:24:26.682Z",
+              "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RatingCalculator.cs",
+              "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\RatingCalculation\\RatingCalculator.cs",
+              "RelativeDocumentMoniker": "DropletLib\\RatingCalculation\\RatingCalculator.cs",
+              "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\RatingCalculation\\RatingCalculator.cs",
+              "RelativeToolTip": "DropletLib\\RatingCalculation\\RatingCalculator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T16:38:13.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "IRatingCalculator.cs",
+              "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\RatingCalculation\\IRatingCalculator.cs",
+              "RelativeDocumentMoniker": "DropletLib\\RatingCalculation\\IRatingCalculator.cs",
+              "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletLib\\RatingCalculation\\IRatingCalculator.cs",
+              "RelativeToolTip": "DropletLib\\RatingCalculation\\IRatingCalculator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T16:38:59.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Program.cs",
               "RelativeDocumentMoniker": "DropletForms\\Program.cs",
@@ -199,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "WinnerForm.Designer.cs",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.Designer.cs",
               "RelativeDocumentMoniker": "DropletForms\\Forms\\WinnerForm.Designer.cs",
@@ -212,20 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WinnerForm.cs",
-              "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.cs",
-              "RelativeDocumentMoniker": "DropletForms\\Forms\\WinnerForm.cs",
-              "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.cs",
-              "RelativeToolTip": "DropletForms\\Forms\\WinnerForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:27:37.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AddImageForm.cs",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\AddImageForm.cs",
               "RelativeDocumentMoniker": "DropletForms\\Forms\\AddImageForm.cs",
@@ -238,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AddImageForm.cs [Entwurf]",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\AddImageForm.cs",
               "RelativeDocumentMoniker": "DropletForms\\Forms\\AddImageForm.cs",
@@ -250,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "App.config",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\App.config",
               "RelativeDocumentMoniker": "DropletForms\\App.config",
@@ -263,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DropletMain.cs [Entwurf]",
               "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\DropletMain.cs",
               "RelativeDocumentMoniker": "DropletForms\\Forms\\DropletMain.cs",
@@ -271,18 +283,6 @@
               "RelativeToolTip": "DropletForms\\Forms\\DropletMain.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T14:49:19.664Z",
-              "EditorCaption": " [Entwurf]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "WinnerForm.cs [Entwurf]",
-              "DocumentMoniker": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.cs",
-              "RelativeDocumentMoniker": "DropletForms\\Forms\\WinnerForm.cs",
-              "ToolTip": "F:\\Programmieren\\SaalDigital\\ApplicationChallenge\\DropletForms\\DropletForms\\Forms\\WinnerForm.cs [Entwurf]",
-              "RelativeToolTip": "DropletForms\\Forms\\WinnerForm.cs [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:24:26.682Z",
               "EditorCaption": " [Entwurf]"
             },
             {
