@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Data.SQLite;
 using DropletForms.DBCommunication;
+using DropletForms.Forms;
 
 namespace DropletForms
 {
@@ -30,7 +31,9 @@ namespace DropletForms
                 .ConfigureServices((context, services) => {
                     services.AddTransient<DropletMain>();
                     services.AddTransient<AddImageForm>();
+                    services.AddTransient<WinnerForm>();
                     services.AddSingleton<AddImageFormFactory>(() => ServiceProvider.GetRequiredService<AddImageForm>());
+                    services.AddSingleton<WinnerFormFactory>(() => ServiceProvider.GetRequiredService<WinnerForm>());
                     services.AddTransient<IDatabaseCommunicationService, DatabaseCommunicationService>();
                 });
         }

@@ -1,4 +1,5 @@
 using DropletForms.DBCommunication;
+using DropletForms.Forms;
 
 namespace DropletForms
 {
@@ -6,10 +7,12 @@ namespace DropletForms
     {
         private readonly IDatabaseCommunicationService databaseCommunicationService;
         private readonly AddImageFormFactory addImageFormFactory;
-        public DropletMain(IDatabaseCommunicationService databaseCommunicationService, AddImageFormFactory addImageFormFactory)
+        private readonly WinnerFormFactory winnerFormFactory;
+        public DropletMain(IDatabaseCommunicationService databaseCommunicationService, AddImageFormFactory addImageFormFactory, WinnerFormFactory winnerFormFactory)
         {
             this.databaseCommunicationService = databaseCommunicationService;
             this.addImageFormFactory = addImageFormFactory;
+            this.winnerFormFactory = winnerFormFactory;
 
             InitializeComponent();
         }
@@ -19,6 +22,19 @@ namespace DropletForms
             using (var addImageForm = addImageFormFactory.Invoke())
             {
                 addImageForm.ShowDialog(this);
+            }
+        }
+
+        private void StartRatingButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowWinnerButton_Click(object sender, EventArgs e)
+        {
+            using (var winnerForm = winnerFormFactory.Invoke())
+            {
+                winnerForm.ShowDialog(this);
             }
         }
 

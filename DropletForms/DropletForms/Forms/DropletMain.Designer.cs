@@ -34,6 +34,8 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
+            StartRatingButton = new Button();
+            ShowWinnerButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -87,12 +89,42 @@
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
+            // StartRatingButton
+            // 
+            StartRatingButton.BackColor = Color.White;
+            StartRatingButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            StartRatingButton.FlatAppearance.MouseOverBackColor = Color.Silver;
+            StartRatingButton.ForeColor = SystemColors.ControlText;
+            StartRatingButton.Location = new Point(43, 194);
+            StartRatingButton.Name = "StartRatingButton";
+            StartRatingButton.Size = new Size(161, 80);
+            StartRatingButton.TabIndex = 5;
+            StartRatingButton.Text = "Start Rating";
+            StartRatingButton.UseVisualStyleBackColor = false;
+            StartRatingButton.Click += this.StartRatingButton_Click;
+            // 
+            // ShowWinnerButton
+            // 
+            ShowWinnerButton.BackColor = Color.White;
+            ShowWinnerButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            ShowWinnerButton.FlatAppearance.MouseOverBackColor = Color.Silver;
+            ShowWinnerButton.ForeColor = SystemColors.ControlText;
+            ShowWinnerButton.Location = new Point(43, 295);
+            ShowWinnerButton.Name = "ShowWinnerButton";
+            ShowWinnerButton.Size = new Size(161, 80);
+            ShowWinnerButton.TabIndex = 6;
+            ShowWinnerButton.Text = "Show Winner";
+            ShowWinnerButton.UseVisualStyleBackColor = false;
+            ShowWinnerButton.Click += this.ShowWinnerButton_Click;
+            // 
             // DropletMain
             // 
             AutoScaleDimensions = new SizeF(17F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1748, 1101);
+            Controls.Add(ShowWinnerButton);
+            Controls.Add(StartRatingButton);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
@@ -117,5 +149,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private Button StartRatingButton;
+        private Button ShowWinnerButton;
     }
 }
