@@ -4,7 +4,7 @@ namespace DropletLib
 {
     public class ImageModel
     {
-        public Guid Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Location { get; set; }
         public string Filepath { get; set; }
@@ -12,7 +12,7 @@ namespace DropletLib
 
         public ImageModel() 
         {
-            Id = Guid.NewGuid();
+            Id = Guid.NewGuid().ToString();
             Rating = 0;
         }
 
