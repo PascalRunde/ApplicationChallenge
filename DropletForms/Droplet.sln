@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropletForms", "DropletForm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropletLib", "DropletLib\DropletLib.csproj", "{AD108DB7-C8CC-4C56-9D31-3BD55F4ED31C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropletTest", "DropletTest\DropletTest.csproj", "{8D1DDB5B-E106-411E-9969-7CF8CE329F08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AD108DB7-C8CC-4C56-9D31-3BD55F4ED31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD108DB7-C8CC-4C56-9D31-3BD55F4ED31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD108DB7-C8CC-4C56-9D31-3BD55F4ED31C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1DDB5B-E106-411E-9969-7CF8CE329F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1DDB5B-E106-411E-9969-7CF8CE329F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1DDB5B-E106-411E-9969-7CF8CE329F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1DDB5B-E106-411E-9969-7CF8CE329F08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
