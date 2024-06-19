@@ -13,6 +13,10 @@ namespace DropletForms.DBCommunication
 
         void AddImage(string name, string location, string filepath);
 
+        List<ImageModel> GetFourRandomImages();
+
+        List<ImageModel> GetHighestRatedImages();
+
         void ImproveImageRating(ImageModel image);
 
 
