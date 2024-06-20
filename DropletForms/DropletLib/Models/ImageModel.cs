@@ -4,11 +4,11 @@ namespace DropletLib
 {
     public class ImageModel
     {
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Location { get; set; }
-        public string Filepath { get; set; }
-        public int Rating { get; set; }
+        public string Id { get; private set; }
+        public string Name { get; private set; }
+        public string Location { get; private set; }
+        public string Filepath { get; private set; }
+        public int Rating { get; private set; }
 
         public ImageModel() 
         {

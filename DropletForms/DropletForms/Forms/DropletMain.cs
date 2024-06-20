@@ -2,6 +2,7 @@ using DropletForms.DBCommunication;
 using DropletForms.Forms;
 using DropletForms.RatingCalculation;
 using DropletLib;
+using DropletLib.ExampleData;
 
 namespace DropletForms
 {
@@ -28,6 +29,41 @@ namespace DropletForms
             this.ratingCalculator = ratingCalculator;
 
             InitializeComponent();
+
+            SetupView();
+        }
+
+        private void SetupView()
+        {
+            if (databaseCommunicationService.GetImageCount() > 4)
+            {
+                InstructionLabel.Visible = false;
+                AddExampleDataButton.Visible = false;
+                StartRatingButton.Visible = true;
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = true;
+                pictureBox3.Visible = true;
+                pictureBox4.Visible = true;
+                ShowWinnerButton.Visible = true;
+            }
+            else
+            {
+                InstructionLabel.Visible = true;
+                AddExampleDataButton.Visible = true;
+                StartRatingButton.Visible = false;
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = false;
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
+                ShowWinnerButton.Visible = false;
+            }
+
+        }
+        private void AddExampleDataButton_Click(object sender, EventArgs e)
+        {
+            AddExampleDataService addExampleDataService = new AddExampleDataService(databaseCommunicationService);
+            addExampleDataService.AddExampleData();
+            SetupView();
         }
 
         private void AddImageButton_Click(object sender, EventArgs e)
@@ -35,6 +71,8 @@ namespace DropletForms
             using (var addImageForm = addImageFormFactory.Invoke())
             {
                 addImageForm.ShowDialog(this);
+                //Check if 4 images are in the DB and change content appropriately
+                SetupView();
             }
         }
 
@@ -95,5 +133,7 @@ namespace DropletForms
             pictureBox4.Image = Image.FromFile(filepaths[3].Filepath);
             pictureBox4ImageModel = filepaths[3];
         }
+
+
     }
 }

@@ -23,8 +23,14 @@ namespace DropletForms.DBCommunication
             this.connection = new SQLiteConnection(connectionString);
         }
 
+        public int GetImageCount()
+        {
+            return connection.Query<ImageModel>("SELECT * FROM Images", new DynamicParameters()).Count();
+        }
+
         public void AddImage(string filepath)
         {
+            //TODO: Copy file to a location and maybe store as blob
             ImageModel image = new ImageModel(filepath);
             AddImageToDatabase(image);
         }

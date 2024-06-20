@@ -2,6 +2,7 @@
 using DropletLib;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DropletForms.RatingCalculation
 {
@@ -19,10 +20,12 @@ namespace DropletForms.RatingCalculation
             databaseCommunicationService.ImproveImageRating(image);
         }
 
+        
         public ImageModel GetWinner()
         {
             List<ImageModel> bestImages = databaseCommunicationService.GetHighestRatedImages();
-            return bestImages[0];
+            //TODO: Resolve a tie reasonable
+            return bestImages.First();
         }
 
         public void Dispose()

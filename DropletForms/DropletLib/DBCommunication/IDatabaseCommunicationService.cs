@@ -6,6 +6,7 @@ namespace DropletForms.DBCommunication
 {
     public interface IDatabaseCommunicationService : IDisposable
     {
+        int GetImageCount();
         void AddImage(string filepath);
 
         void AddImage(string name, string location, string filepath);

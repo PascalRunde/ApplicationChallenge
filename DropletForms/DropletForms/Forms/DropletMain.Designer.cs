@@ -37,6 +37,8 @@
             StartRatingButton = new Button();
             ShowWinnerButton = new Button();
             ClickMostBeautifulLabel = new Label();
+            InstructionLabel = new Label();
+            AddExampleDataButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -99,7 +101,7 @@
             StartRatingButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
             StartRatingButton.FlatAppearance.MouseOverBackColor = Color.Silver;
             StartRatingButton.ForeColor = SystemColors.ControlText;
-            StartRatingButton.Location = new Point(43, 194);
+            StartRatingButton.Location = new Point(43, 476);
             StartRatingButton.Name = "StartRatingButton";
             StartRatingButton.Size = new Size(161, 80);
             StartRatingButton.TabIndex = 5;
@@ -113,7 +115,7 @@
             ShowWinnerButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
             ShowWinnerButton.FlatAppearance.MouseOverBackColor = Color.Silver;
             ShowWinnerButton.ForeColor = SystemColors.ControlText;
-            ShowWinnerButton.Location = new Point(43, 295);
+            ShowWinnerButton.Location = new Point(43, 820);
             ShowWinnerButton.Name = "ShowWinnerButton";
             ShowWinnerButton.Size = new Size(161, 80);
             ShowWinnerButton.TabIndex = 6;
@@ -131,12 +133,37 @@
             ClickMostBeautifulLabel.Text = "Click the most beautiful image!";
             ClickMostBeautifulLabel.Visible = false;
             // 
+            // InstructionLabel
+            // 
+            InstructionLabel.AutoSize = true;
+            InstructionLabel.Location = new Point(872, 487);
+            InstructionLabel.Name = "InstructionLabel";
+            InstructionLabel.Size = new Size(232, 34);
+            InstructionLabel.TabIndex = 8;
+            InstructionLabel.Text = "Add images or:";
+            // 
+            // AddExampleDataButton
+            // 
+            AddExampleDataButton.BackColor = Color.White;
+            AddExampleDataButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            AddExampleDataButton.FlatAppearance.MouseOverBackColor = Color.Silver;
+            AddExampleDataButton.ForeColor = SystemColors.ControlText;
+            AddExampleDataButton.Location = new Point(877, 553);
+            AddExampleDataButton.Name = "AddExampleDataButton";
+            AddExampleDataButton.Size = new Size(219, 80);
+            AddExampleDataButton.TabIndex = 9;
+            AddExampleDataButton.Text = "Add Exampledata";
+            AddExampleDataButton.UseVisualStyleBackColor = false;
+            AddExampleDataButton.Click += AddExampleDataButton_Click;
+            // 
             // DropletMain
             // 
             AutoScaleDimensions = new SizeF(17F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1748, 1101);
+            Controls.Add(AddExampleDataButton);
+            Controls.Add(InstructionLabel);
             Controls.Add(ClickMostBeautifulLabel);
             Controls.Add(ShowWinnerButton);
             Controls.Add(StartRatingButton);
@@ -168,5 +195,7 @@
         private Button StartRatingButton;
         private Button ShowWinnerButton;
         private Label ClickMostBeautifulLabel;
+        private Label InstructionLabel;
+        private Button AddExampleDataButton;
     }
 }
