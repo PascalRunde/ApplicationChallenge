@@ -124,6 +124,7 @@ namespace DropletForms
         private void SetupNewRatingView()
         {
             List<ImageModel> filepaths = databaseCommunicationService.GetFourRandomImages();
+            //TODO: Check filepath and if it doesnt work show notification to the user
             pictureBox1.Image = Image.FromFile(filepaths[0].Filepath);
             pictureBox1ImageModel = filepaths[0];
             pictureBox2.Image = Image.FromFile(filepaths[1].Filepath);

@@ -23,11 +23,13 @@ namespace DropletForms.DBCommunication
             this.connection = new SQLiteConnection(connectionString);
         }
 
+        //Used to find out if there are enough 
         public int GetImageCount()
         {
             return connection.Query<ImageModel>("SELECT * FROM Images", new DynamicParameters()).Count();
         }
 
+        //TODO: Get rid of this method and force user to fill all fields
         public void AddImage(string filepath)
         {
             //TODO: Copy file to a location and maybe store as blob
@@ -37,6 +39,7 @@ namespace DropletForms.DBCommunication
 
         public void AddImage(string name, string location, string filepath)
         {
+            //TODO: Copy file to a location and maybe store as blob
             ImageModel image = new ImageModel(name, location, filepath);
             AddImageToDatabase(image);
         }
@@ -67,6 +70,7 @@ namespace DropletForms.DBCommunication
             }
             catch (Exception ex)
             {
+                //TODO: Propagate error to the view and display meaningful error message
                 throw ex;
             }
         }

@@ -19,7 +19,6 @@ namespace DropletForms
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            //Application.Run(new DropletMain());
             var host = CreateHostBuilder().Build();
             ServiceProvider = host.Services;
 

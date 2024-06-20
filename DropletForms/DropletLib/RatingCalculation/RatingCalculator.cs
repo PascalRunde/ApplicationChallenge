@@ -16,7 +16,6 @@ namespace DropletForms.RatingCalculation
 
         public void AddOneToRating(ImageModel image)
         {
-            
             databaseCommunicationService.ImproveImageRating(image);
         }
 

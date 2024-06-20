@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DropletLib.ExampleData
 {
-    public class AddExampleDataService : IDisposable
+    public class AddExampleDataService
     {
         private IDatabaseCommunicationService databaseCommunicationService;
         public AddExampleDataService(IDatabaseCommunicationService databaseCommunicationService) 
@@ -28,9 +28,5 @@ namespace DropletLib.ExampleData
             databaseCommunicationService.AddImage("USA01", "USA", @"./Data/ExampleData/USA01.png");
         }
 
-        public void Dispose()
-        {
-            
-        }
     }
 }
